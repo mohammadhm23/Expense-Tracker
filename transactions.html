@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <nav>
+            <a href="#" id="backButton">Back</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="frames">
+                <div class="frame" id="incomeFrame">
+                    <h2>Income</h2>
+                    <p id="incomeAmount">$0</p>
+                </div>
+                <div class="frame" id="outcomeFrame">
+                    <h2>Outcome</h2>
+                    <p id="outcomeAmount">$0</p>
+                </div>
+                <div class="frame" id="totalFrame">
+                    <h2>Total</h2>
+                    <p id="totalAmount">$0</p>
+                </div>
+            </div>
+            <div class="transaction">
+                <h2>Add Transaction</h2>
+                <input type="number" id="amount" placeholder="Amount">
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="outcome">Outcome</option>
+                </select>
+                <select id="currency"></select>
+                <button id="requestButton">Request</button>
+            </div>
+            <div class="transactions">
+                <h2>Transaction History</h2>
+                <ul id="transactionList"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/page2.js"></script>
+</body>
+</html>
